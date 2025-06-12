@@ -1,0 +1,156 @@
+body {
+    font-family: 'Orbitron', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-image: url('https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #0a0e1a; /* Fallback color */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #ff00ff;
+    font-size: 4em;
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.header-icon {
+    width: 60px;
+    height: 60px;
+    filter: drop-shadow(0 0 10px #ff00ff);
+}
+
+.parametro-senha {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    padding: 50px;
+    border-radius: 25px;
+    width: 550px;
+    box-shadow: 0 0 30px rgba(255, 0, 255, 0.3);
+    border: 2px solid rgba(255, 0, 255, 0.5);
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+h4 {
+    color: #00ffcc;
+    margin-bottom: 30px;
+    font-size: 1.8em;
+    text-align: center;
+    text-shadow: 0 0 5px #00ffcc;
+}
+
+.checkbox {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    accent-color: #ff00ff;
+    margin-right: 15px;
+}
+
+label {
+    font-size: 22px;
+    color: #ffffff;
+    cursor: pointer;
+    text-shadow: 0 0 5px #ffffff;
+}
+
+.parametro-senha-checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.campo-senha {
+    width: 100%;
+    padding: 18px;
+    margin-top: 30px;
+    font-size: 22px;
+    border: 2px solid #ff00ff;
+    border-radius: 15px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 0 0 5px #ffffff;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.campo-senha:focus {
+    outline: none;
+    border-color: #00ffcc;
+    box-shadow: 0 0 15px rgba(0, 255, 204, 0.7);
+}
+
+button {
+    margin-top: 30px;
+    padding: 18px;
+    width: 100%;
+    background: linear-gradient(45deg, #ff00ff, #00ffcc);
+    color: #ffffff;
+    font-size: 22px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    text-shadow: 0 0 5px #ffffff;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #00ffcc, #ff00ff);
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.5);
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px 0;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.nome-aluno {
+    color: #ff00ff;
+    text-shadow: 0 0 10px #ff00ff;
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 20px rgba(255, 0, 255, 0.3);
+    }
+    to {
+        box-shadow: 0 0 40px rgba(255, 0, 255, 0.5);
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+@media (max-width: 600px) {
+    .parametro-senha {
+        width: 90%;
+        padding: 30px;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+    .header-icon {
+        width: 40px;
+        height: 40px;
+    }
+}
